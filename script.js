@@ -24,6 +24,61 @@ console.log(para.setAttribute("cla", "newCla"))
 */
 
 // ========== কোনো ডিভের শাখাকে স্টাইল করার জন্য আমরা ব্যবহার করি শাকাnama.style.stylename = "এখানে স্টাইল এলেমেন্ট"
-
+/*
 let div = document.querySelector(".cla");
 div.style.textAlign  = "center";
+*/
+/* জাভাস্ক্রিপ্ট দিয়ে নতুন হেডিং দেয়া যায়। যদি div এর ভিতরে শেষে দিতে হয় তবে 
+div.append(var), যদি ভিতরে শুরুতে দিতে হয় তবে div.prepend(var), যদি বাহিরে উপরে দিতে
+হয় তবে div.before(var), যদি বাহিরে পরে দিতে হয় তবে div.after(var) ব্যবহার করতে হবে।
+*/
+/*
+let element = document.createElement("button");
+element.innerText = "click here!";
+let div = document.querySelector("div");
+div.append(element);
+div.prepend(element);
+div.before(element);
+div.after(element);
+element.style.backgroundColor = "blue";
+element.style.padding = "15px 20px";
+element.style.color = "white";
+element.style.border = "none";
+element.style.boxShadow = "0 0 15px whitesmoke inset";
+element.style.borderRadius = "20px 30px";
+*/ 
+/*
+let head = document.createElement("h1");
+head.innerHTML = "<i> This heading is from JS file</i>";
+let sit = document.querySelector("div");
+sit.before(head);
+
+head.style.background = "#eb349f"
+head.style.padding = "10px 0";
+head.style.textShadow = "0 0 5px gray inset";
+head.style.color = "white";
+
+let head2 = document.createElement("h2");
+head2.innerText = "Down text";
+sit.after(head2);
+head2.style.color = "white";
+head2.style.padding = "20px 0";
+head2.style.background = "black";
+*/
+// =================practice-1===================
+let button = document.createElement("button");
+button.innerText = "click me!";
+button.style.background = "red";
+button.style.color = "white";
+button.style.padding= "15px 30px";
+button.style.border = "none";
+button.style.boxShadow = "0 0 6px gray";
+button.style.borderRadius = "10%";
+button.style.margin = "10px";
+button.style.cursor = "pointer";
+document.querySelector("body").prepend(button);
+
+// =================practice -2 =============================
+
+let para = document.querySelector("p");
+para.classList.add("newPara")

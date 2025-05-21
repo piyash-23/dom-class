@@ -19,3 +19,13 @@
     width: 200px;
     color: white;
 }
+
+.para {
+    background: rgb(43, 236, 211);
+}
+.newPara {
+    color: blue;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 2rem;
+}
