@@ -81,4 +81,13 @@ document.querySelector("body").prepend(button);
 // =================practice -2 =============================
 
 let para = document.querySelector("p");
-para.classList.add("newPara")
+para.classList.add("newPara");
+para.classList.remove("para");
+para.classList.add("para");
+let topHead = document.createElement("h1");
+topHead.innerHTML = "<i> Welcome to event handling</i>"
+document.querySelector("body").append(topHead);
+topHead.style.fontWeight = "700";
+topHead.style.textAlign = "center";
+
+// =============event handling starts here===========================
