@@ -91,3 +91,24 @@ topHead.style.fontWeight = "700";
 topHead.style.textAlign = "center";
 
 // =============event handling starts here===========================
+let btn1 = document.querySelector("#btn1");
+let btn = document.createElement("p");
+btn.innerText = Date();
+btn1.addEventListener("click" , ()=>{
+    document.querySelector(".cla").after(btn);
+})
+// =====================practice event class==================
+let dark = document.querySelector("#dark-mode");
+let body = document.querySelector("body");
+let mode = "light";
+dark.addEventListener("click" , ()=>{
+    if(mode === "light"){
+        mode = "dark";
+        body.classList.add("dark-mode");
+        body.classList.remove("light-mode");
+    } else{
+        mode = "light";
+        body.classList.add("light-mode");
+        body.classList.remove("dark-mode");
+    }
+});

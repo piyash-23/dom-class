@@ -29,3 +29,19 @@
     padding: 20px;
     font-size: 2rem;
 }
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.light-mode{
+    background-color: white;
+    color: black;
+}
+#dark-mode{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(39, 25, 235);
+    color: white;
+    cursor: pointer;
+}
