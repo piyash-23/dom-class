@@ -65,6 +65,7 @@ head2.style.color = "white";
 head2.style.padding = "20px 0";
 head2.style.background = "black";
 */
+/*
 // =================practice-1===================
 let button = document.createElement("button");
 button.innerText = "click me!";
@@ -89,8 +90,9 @@ topHead.innerHTML = "<i> Welcome to event handling</i>"
 document.querySelector("body").append(topHead);
 topHead.style.fontWeight = "700";
 topHead.style.textAlign = "center";
-
+*/
 // =============event handling starts here===========================
+/*
 let btn1 = document.querySelector("#btn1");
 let btn = document.createElement("p");
 btn.innerText = Date();
@@ -112,3 +114,5 @@ dark.addEventListener("click" , ()=>{
         body.classList.remove("dark-mode");
     }
 });
+*/
+
