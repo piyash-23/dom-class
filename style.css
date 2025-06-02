@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /* .box{
     height: 100px;
@@ -13,35 +13,35 @@
 } */
 
 .cla {
-    font-size: 2rem;
-    background-color: rgb(40, 91, 231);
-    height: 100px;
-    width: 200px;
-    color: white;
+  font-size: 2rem;
+  background-color: rgb(40, 91, 231);
+  height: 100px;
+  width: 200px;
+  color: white;
 }
 
 .para {
-    background: rgb(43, 236, 211);
+  background: rgb(43, 236, 211);
 }
 .newPara {
-    color: blue;
-    font-weight: bold;
-    padding: 20px;
-    font-size: 2rem;
+  color: blue;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 2rem;
 }
 .dark-mode {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
-.light-mode{
-    background-color: white;
-    color: black;
+.light-mode {
+  background-color: white;
+  color: black;
 }
-#dark-mode{
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    background: rgb(39, 25, 235);
-    color: white;
-    cursor: pointer;
+#dark-mode {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(39, 25, 235);
+  color: white;
+  cursor: pointer;
 }
