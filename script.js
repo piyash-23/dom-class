@@ -17,7 +17,7 @@ console.log(jsdiv);
 let att = jsdiv.getAttribute("name");
 console.log(att);
 */
-// to change class name we use setAttribute 
+// to change class name we use setAttribute
 /*
 let para = document.querySelector("div");
 console.log(para.setAttribute("cla", "newCla"))
@@ -46,7 +46,7 @@ element.style.color = "white";
 element.style.border = "none";
 element.style.boxShadow = "0 0 15px whitesmoke inset";
 element.style.borderRadius = "20px 30px";
-*/ 
+*/
 /*
 let head = document.createElement("h1");
 head.innerHTML = "<i> This heading is from JS file</i>";
@@ -116,3 +116,58 @@ dark.addEventListener("click" , ()=>{
 });
 */
 
+let guessNum = document.querySelector("#guessNum");
+let compNum = Math.floor(Math.random() * 21);
+let check = document.querySelector(".submit");
+let startGuess = document.querySelector("#start-guess");
+let again = document.querySelector(".again");
+let body = document.querySelector("body");
+let highscore = document.querySelector(".highscore");
+let high = 0;
+let compShow = document.querySelector(".ques");
+
+let score = 20;
+const scoring = document.querySelector(".score-span");
+document.querySelector(".score-span").textContent = score;
+console.log(compNum);
+
+const displayMessage = function (message) {
+  startGuess.textContent = message;
+};
+
+check.addEventListener("click", () => {
+  if (!guessNum.value) {
+    displayMessage("❌ no number");
+  } else if (guessNum.value == compNum) {
+    displayMessage("💥You are right");
+    body.classList.add("bd");
+    compShow.textContent = compNum;
+    check.disabled = true;
+    if (score > high) {
+      high = score;
+      highscore.textContent = high;
+    }
+  } else if (guessNum.value !== compNum) {
+    if (score < 1) {
+      startGuess.textContent = "You lose";
+      check.disabled = true;
+    } else {
+      displayMessage(
+        guessNum.value > compNum ? "Too high buddy!" : "Too low now"
+      );
+      score--;
+      scoring.textContent = score;
+    }
+  }
+});
+again.addEventListener("click", () => {
+  check.disabled = false;
+  body.classList.remove("bd");
+  score = 20;
+  scoring.textContent = score;
+  compShow.textContent = "?";
+  compNum = Math.floor(Math.random() * 21);
+  console.log(compNum);
+  guessNum.value = "";
+  displayMessage("Start guessing");
+});

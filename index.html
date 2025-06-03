@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="upside">
+      <button class="again">Again</button>
+      <p>between 1 to 20</p>
+    </div>
+    <div class="upperGuess">
+      <h2>Guess my number</h2>
+      <hr />
+      <h1 class="ques">?</h1>
+    </div>
+    <div class="newGuess">
+      <div class="guess-area">
+        <div class="left">
+          <input type="number" id="guessNum" />
+          <button class="submit">Check</button>
+        </div>
+        <div class="right">
+          <p id="start-guess">Start guessing</p>
+          <p class="score">score <span class="score-span"></span></p>
+          <p>Highscore <span class="highscore"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- js file -->
     <script src="script.js"></script>
   </body>
 </html>
